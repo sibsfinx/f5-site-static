@@ -1,0 +1,28 @@
+body
+  background-color: $c-gray-lightest
+
+.app-container
+  display: flex
+  flex-direction: row
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-color: $c-gray-lightest
+
+.app-menu
+  order: 1
+  flex: $app-menu-width 0 0
+  background-color: $c-gray-dark
+  @media screen and (max-width: $screen-sm-max)
+    display: none
+
+.app-content
+  order: 2
+  flex: 1 1
+  overflow-y: auto
+  +antialiased
+

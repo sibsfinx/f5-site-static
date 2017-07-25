@@ -1,0 +1,56 @@
+extends _layouts/application
+
+block content
+  .case-cover
+    .case-cover__content
+      .row
+        .col-md-6.col-lg-7
+          nav.case-cover__breadcrumbs
+            a.case-cover__breadcrumbs-item(href="") Кейсы
+        .col-md-6.col-lg-5.text-right
+          .case-cover__contacts
+            a.link--white.inline-content-block-sm(href="tel:+74952480105")
+              strong +7 495 248 01 05
+            a.btn.btn-sm.btn-white--outline(href="") Обратный звонок
+      h1.case-cover__title
+        | Интеграции
+      h2.case-cover__subtitle
+        | Выполненные проекты интеграций различных систем
+
+  .page-content
+    .row
+      - var i = 0
+      while i < 12
+        .col-md-6
+          article
+            a.case-card(href="case.html")
+              .case-card__content
+                h3.case-card__title
+                  | Интеграция amoCRM с сервисом для совместного доступа к файлам Pydio
+              .case-card__image-block
+                .case-card__image-block-content
+                  .case-card__logo(style="background-image: url('../images/logo-amocrm@2x.png');")
+                  .case-card__logo(style="background-image: url('../images/logo-pydio@2x.png');")
+            - i++
+    .content-pagination
+      - var k = 2
+      a.content-pagination__item.content-pagination__item--active(href="#") 1
+      while k < 5
+        a.content-pagination__item(href="#")
+          = k++
+      a.content-pagination__item(href="#") &rarr;
+    .page-section
+      h1.page-section-title События
+      .row
+        - var p = 0
+        while p < 5
+          .col-lg-4.col-md-6
+            article
+              a.events__item(href="")
+                | Итоги форума IT-Link 2016 в Чебоксарах
+            - p++
+        .col-lg-4.col-md-6
+          a.events__item(href="")
+            strong Ещё события &rarr;
+
+

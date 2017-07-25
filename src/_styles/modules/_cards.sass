@@ -1,0 +1,66 @@
+$case-card-content-height: 135px
+$case-card-image-height: 305px
+$case-card-padding: 24px
+
+.case-card
+  display: block
+  background-color: #fff
+  margin-bottom: $case-card-padding
+  color: $text-color
+  &:hover, &:focus
+    color: $link-hover-color
+    .case-card__image-block-content
+      background-color: rgba(#000, 0.4)
+  transition: color 0.2s ease
+
+
+.case-card__content
+  height: $case-card-content-height
+  padding:
+    top: $case-card-padding - $font-size-larger/$line-height-base
+    bottom: $case-card-padding
+    left: $grid-gutter-width
+    right: $grid-gutter-width
+  +antialiased
+
+.case-card__title
+  font:
+    family: $font-family-base
+    size: $font-size-larger
+    weight: 300
+  line-height: 1.3em
+
+.case-card__image-block
+  position: relative
+  height: $case-card-image-height
+  background:
+    color: $gray-dark
+    image: url('../images/card-cover.jpg')
+    repeat: no-repeat
+    size: cover
+    position: center center
+
+.case-card__image-block-content
+  display: flex
+  flex-direction: column
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  align-items: center
+  justify-content: center
+  transition: background 0.2s ease
+
+.case-card__logo
+  width: 160px
+  height: 50px
+  margin:
+    bottom: $grid-gutter-width/2
+  background:
+    repeat: no-repeat
+    size: contain
+    position: center center
+
+
