@@ -99,13 +99,13 @@
       },
       "staging": {
         "apiHost": "",
-        "host": "",
+        "host": "http://cmdf5.ru",
         "webApp": "",
         "GA_TRACKING_ID": ""
       },
       "production": {
         "apiHost": "",
-        "host": "",
+        "host": "http://cmdf5.ru",
         "hostname": "",
         "webApp": "",
         "GA_TRACKING_ID": ""

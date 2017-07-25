@@ -6,6 +6,7 @@ import sitemap from 'gulp-sitemap';
 export default function(gulp, plugins, args, config, taskTarget, browserSync) {
   let dirs = config.directories;
   let build = dirs.destination;
+  let siteUrl = config.host;
 
   gulp.task('sitemap', function () {
     gulp.src(path.join(build, '**/*.html'))

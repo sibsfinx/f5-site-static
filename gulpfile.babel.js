@@ -39,8 +39,7 @@ gulp.task('build', [
   'jade',
   'sass',
   'browserify',
-  'sitemap',
-  'robots'
+  'sitemap'
 ]);
 
 // Server tasks with watch
