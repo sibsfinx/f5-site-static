@@ -1,9 +1,0 @@
-node_modules
-bower_components
-*.log
-build
-tmp
-.grunt
-.DS_Store
-.awspublish-*
-.publish/
