@@ -62,8 +62,9 @@
     "clean-deps": "rimraf node_modules",
     "build:staging": "gulp build --staging",
     "build:production": "gulp build --production",
-    "deploy:staging": "gulp build --staging && gulp s3:staging",
-    "deploy:production": "gulp build --production && gulp s3:production"
+    "gulp:deploy": "gulp build --production && gulp ghPages",
+    "deploy:staging": "gulp build --staging && gulp ghPages",
+    "deploy:production": "gulp build --production && gulp ghPages"
   },
   "engines": {
     "node": ">=0.12.0"
